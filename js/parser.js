@@ -71,7 +71,7 @@ function parseLine(line, lineNo) {
 		
 		code = args[0].trim();
 		
-		var def = InstructionDefinition[code];
+		var def = InstructionDefinition[code.toLowerCase()];
 		if( def ) {
 			
 			var instr = new Instruction(def);
